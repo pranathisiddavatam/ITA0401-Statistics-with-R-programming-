@@ -1,0 +1,8 @@
+csv_file <- "C:/Users/DELL/OneDrive/Documents/Book1.csv"  
+if (file.exists(csv_file)) {
+  data <- read.csv(csv_file)
+  print("CSV File Content:")
+  print(data)
+} else {
+  cat("File not found:", csv_file, "\n")
+}
